@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class gO {
+
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		
+		for(int row = 1; row <= number; row++){
+			if(row == 1 || 	row == number){
+				for(int column = 1; column <= number; column++ ){
+					System.out.print("*");
+				}
+			}
+			else{
+				for(int column = 1; column <= number; column++ ){
+					if(column == 1 || column == number){
+						System.out.print("*");
+					}
+					else{
+						System.out.print(" ");
+					}
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+}
